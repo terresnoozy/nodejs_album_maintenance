@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1= title
+
+    // Album List
+    #albumList
+        table
+            thead
+                th Album Name
+                th Artist
+                th Year
+                th Genre
+                th Update?
+                th Delete?
+            tbody
+    // /Album List
+    a.navlink(href='/albums/newAlbum') Add a new album

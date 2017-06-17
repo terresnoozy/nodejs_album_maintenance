@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddAlbum(name='addalbum', method='post',  action='/albums/addAlbum')
+        input#inputAlbumName(type='text', placeholder='Album Name', name='albumname')
+        input#inputArtist(type='text', placeholder='Artist', name='artist')
+        input#inputYear(type='text', placeholder='Year', name='year')
+        input#inputGenre(type='text', placeholder='Genre', name='genre')
+        button#btnSubmit.navlink(type='submit') Click to Add
+        a.navlink(href='/index') Cancel, Go back home

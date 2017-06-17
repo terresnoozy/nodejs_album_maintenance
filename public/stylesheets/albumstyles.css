@@ -1,0 +1,78 @@
+﻿
+/*************** HTML tag selectors ***************/
+html {
+    background-color : antiquewhite;
+}
+body {
+    width           : 960px;
+    background      : linear-gradient(100deg, brown, lightblue) ;
+    border-radius   : 10px;
+    box-shadow      : black 5px 5px 2px;
+    padding         : 0px 10px 10px 10px;
+}
+
+form {
+    border              : solid;
+    padding             : 10px;
+    background-color    : lightsteelblue;
+    border-radius       : 10px;
+    box-shadow          : black 5px 5px 2px;
+    float               : left;
+}
+
+input {
+    width : 340px;
+}
+
+table {
+    border          : solid 2px black;
+    border-radius   : 10px;
+    box-shadow      : black 5px 5px 2px;
+}
+
+th {    /* Table Header cells */
+    margin              : 0px;
+    padding             : 5px;
+    border              : 0px;
+    background-color    : darkgray
+
+}
+
+td {    /* Table data cells */
+    padding : 2px 5px 2px 5px;
+}
+
+tr:nth-child(odd) { /* Odd-numbered table rows */
+    background-color : palegoldenrod;
+}
+
+tr:nth-child(even) {    /* Even-numbered table rows */
+    background-color : goldenrod;
+}
+
+
+/*************** class selectors ***************/
+.navlink {
+    display             : inline-block;
+    text-decoration     : none;
+    font-weight         : bold;
+    background-color    : tan;
+    color               : black;
+    border              : outset;
+    border-radius       : 20px;
+    box-shadow          : 2px 2px 5px 2px black;
+    padding             : 3px 10px;
+    margin              : 10px 10px 10px 10px;
+}
+
+.navlink:hover {
+    color               : yellow;
+    background-color    : brown;
+}
+
+
+/*************** Individual ID selectors ***************/
+#formAddAlbum, #formUpdateAlbum {
+    width : 350px;
+}
+
