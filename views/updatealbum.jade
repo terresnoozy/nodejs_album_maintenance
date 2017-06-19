@@ -3,7 +3,9 @@ extends layout
 block content
     h1= title
     form#formUpdateAlbum(name='updatealbum', method='POST',  action='/albums/updatealbum')
-        input#inputAlbumId(type='hidden', name='_id' value=album._id)
+        // Need to use toString() below to keep id value from being quoted
+        input#inputAlbumId(type='hidden', name='_id' value=album._id.toString())
+
         input#inputAlbumName(type='text', placeholder='Album Name' name='albumname' value=album.albumname)
         input#inputArtist(type='text', placeholder='Artist', name='artist' value=album.artist)
         input#inputYear(type='text', placeholder='Year', name='year' value=album.year)
